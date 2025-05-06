@@ -94,7 +94,4 @@ export type ColorPickerProps = Omit<
   onClear?: () => void;
   onChangeComplete?: (value: AggregationColor) => void;
   disabledFormat?: boolean;
-} & Pick<
-    PopoverProps,
-    'getPopupContainer' | 'autoAdjustOverflow' | 'destroyTooltipOnHide' | 'destroyOnClose'
-  >;
+} & Pick<PopoverProps, 'getPopupContainer' | 'autoAdjustOverflow' | 'destroyTooltipOnHide'>;

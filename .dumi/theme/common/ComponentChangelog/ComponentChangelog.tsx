@@ -277,7 +277,7 @@ const ComponentChangelog: React.FC<Readonly<React.PropsWithChildren>> = (props) 
                 {version}
                 {bugVersionInfo.match && (
                   <Popover
-                    destroyOnClose
+                    destroyTooltipOnHide
                     placement="right"
                     title={<span className={styles.bugReasonTitle}>{locale.bugList}</span>}
                     content={
